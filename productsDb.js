@@ -7,7 +7,7 @@
       "category": "teclados",
       "description": "Este teclado T-Dagger de alto rendimiento permite que puedas disfrutar de horas ilimitadas de juegos. Está diseñado especialmente para que puedas expresar tanto tus habilidades como tu estilo. Podrás mejorar tu experiencia de gaming, ya seas un aficionado o todo un experto y hacer que tus jugadas alcancen otro nivel. Distinción a todo color: Su retroiluminación le da un toque diferente a tu equipo y resalta su composición cuando es utilizado en espacios poco iluminados. Tecnología antighosting: Este dispositivo tiene teclas antighosting. Esta cualidad es indispensable si requerís de un uso intensivo del periférico. Gracias a esto podrás evitar fallas al tocar varias teclas al mismo tiempo.",
       "price": 5399,
-      "img": "../../assets/teclado1.png",
+      "img": "https://i.ibb.co/gFbMxdc/teclado1.png",
       "stock": 50
     },
     {
@@ -16,7 +16,7 @@
       "category": "teclados",
       "description": "Este teclado HyperX de alto rendimiento permite que puedas disfrutar de horas ilimitadas de juegos. Está diseñado especialmente para que puedas expresar tanto tus habilidades como tu estilo. Podrás mejorar tu experiencia de gaming, ya seas un aficionado o todo un experto y hacer que tus jugadas alcancen otro nivel. Distinción a todo color: Su retroiluminación le da un toque diferente a tu equipo y resalta su composición cuando es utilizado en espacios poco iluminados. Tecnología antighosting: Este dispositivo tiene teclas antighosting. Esta cualidad es indispensable si requerís de un uso intensivo del periférico. Gracias a esto podrás evitar fallas al tocar varias teclas al mismo tiempo.",
       "price": 9049,
-      "img": "../../assets/teclado2.png",
+      "img": "https://i.ibb.co/yXCq5k6/teclado2.png",
       "stock": 25
     },
     {
@@ -25,7 +25,7 @@
       "category": "teclados",
       "description": "Innovadores en diseño y tecnología, Logitech se encarga de brindar la mejor experiencia de uso para sus usuarios. Sus teclados resaltan por ser resistentes y muy de buena calidad, por lo que podrás disfrutarlos por un largo tiempo.",
       "price": 6499,
-      "img": "../../assets/teclado3.png",
+      "img": "https://i.ibb.co/5WXh2Cy/teclado3.png",
       "stock": 30
     },
     {
@@ -34,7 +34,7 @@
       "category": "auriculares",
       "description": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Kotion G2000 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos: El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.",
       "price": 3330,
-      "img": "../../assets/auriculares1.png",
+      "img": "https://i.ibb.co/dcyZSPS/auriculares1.png",
       "stock": 15
     },
     {
@@ -43,7 +43,7 @@
       "category": "auriculares",
       "description": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los HyperX Stinger Core Wireless + 7.1 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos: El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.",
       "price": 17399,
-      "img": "../../assets/auriculares2.png",
+      "img": "https://i.ibb.co/bNhjbn2/auriculares2.png",
       "stock": 27
     },
     {
@@ -52,7 +52,7 @@
       "category": "auriculares",
       "description": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Redragon Lamia 2 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos: El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.",
       "price": 10999,
-      "img": "../../assets/auriculares3.png",
+      "img": "https://i.ibb.co/gzbMTsT/auriculares3.png",
       "stock": 33
     },
     {
@@ -61,7 +61,7 @@
       "category": "auriculares",
       "description": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Logitech G435 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores. El formato perfecto para vos: El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.",
       "price": 17811,
-      "img": "../../assets/auriculares4.png",
+      "img": "https://i.ibb.co/gdPdm7r/auriculares4.png",
       "stock": 55
     },
     {
@@ -70,7 +70,7 @@
       "category": "auriculares",
       "description": "Es un headset de diseño acústico cerrado novedoso y fresco. Alta tecnología acústica para mejorar cualquier sesión de juego con una nitidez y un realismo aún mayores. La tecnología de reducción de ruido omnidireccional garantiza que el micrófono pueda recibir sonidos funcionales interactivos en el juego y medioambientales, lo cual es esencial para un juego competitivo. La diadema ajustable está inspirada en la de aviación, que reduce la presión proporcionando la mayor comodidad, incluso durante largas sesiones de juego. El ajuste que permite doblar los altavoces perfectamente para que se ajusten a la forma de cabeza. Las almohadillas de espuma visco elástica, ofrece la mejor comodidad de su clase y un aislamiento del ruido ambiente mejorado, permitiéndote disfrutar de sesiones de juego concentrado y sin distracciones.",
       "price": 3499,
-      "img": "../../assets/auriculares5.png",
+      "img": "https://i.ibb.co/RP1tWhF/auriculares5.png",
       "stock": 40
     },
     {
@@ -79,7 +79,7 @@
       "category": "micrófonos",
       "description": "Con el micrófono HyperX descubrirás una nueva forma de captar y emitir audios. Fiel reflejo de la realidad. Ideal para varias actividades. Te brindará un sonido de calidad y conseguirás la nitidez de las voces. Un formato a tu medida: Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales. Diseño eficaz: Su patrón polar cardioide ofrece una mayor sensibilidad hacia los sonidos frontales, y así evita los ruidos provenientes de la parte posterior.",
       "price": 13900,
-      "img": "../../assets/microfonos1.png",
+      "img": "https://i.ibb.co/sbYXTBg/microfonos1.png",
       "stock": 12
     },
     {
@@ -88,7 +88,7 @@
       "category": "micrófonos",
       "description": "Micrófono de PC Premium: el micrófono de PC se puede usar para estudio de transmisión de radio, voz en off, podcast, grabación, juegos, chat en MSN, Skype, conferencia. Admite dispositivos de PC, computadora portátil, iPhone, iPad, teléfono inteligente. Micrófono de grabación de alta calidad: el micrófono de respuesta de frecuencia 50Hz-16kHz le proporciona una voz clara y de alta fidelidad, sin ruido que lo moleste, lo que le permite sentirse libre para cantar, jugar, hablar, etc. Note: Pero no coloque el micrófono demasiado cerca La pared y la fuente de energía.",
       "price": 3049,
-      "img": "../../assets/microfonos2.png",
+      "img": "https://i.ibb.co/qJ1SY1P/microfonos2.png",
       "stock": 33
     }
   ]

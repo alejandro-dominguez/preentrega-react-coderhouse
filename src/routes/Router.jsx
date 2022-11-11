@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Root } from "../components/";
+import { Landing } from "../components/";
 import { ItemDetailContainer, ItemListContainer } from "../containers/";
 
 const router = createBrowserRouter([
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <ItemListContainer />,
+                element: <Landing />,
             },
             {
                 path: "/category/:categoryId",

@@ -15,9 +15,9 @@ const ItemDetail = ({product}) => {
         <div>
             <img src={product.img} width={450} alt={product.name} />
             <div>
-				<h1>{product.name}</h1>
-				{quantityItemDetail ? <button>Add to cart</button>
-				: <ItemCount onAdd={confirmPurchase} initial={1} stock={product.stock} />}
+                <h1>{product.name}</h1>
+                {quantityItemDetail ? <button>Go to cart</button>
+                : <ItemCount onAdd={confirmPurchase} initial={1} stock={product.stock} />}
             </div>
         </div>
     )

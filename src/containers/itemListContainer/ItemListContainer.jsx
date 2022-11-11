@@ -11,7 +11,7 @@ export default function ItemListContainer () {
             try {
                 let response
                 if (categoryId) {
-                    response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products${categoryId}`)
+                    response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products?category=${categoryId}`)
                 } else {
                     response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products`)
                 }
@@ -22,7 +22,7 @@ export default function ItemListContainer () {
             }
         })()
     }, [categoryId])
-
+    
     return (
         <>
             <ItemList products={products}/>

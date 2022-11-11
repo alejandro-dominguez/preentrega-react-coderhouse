@@ -8,11 +8,9 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         const getProductDetail = async () => {
-            const response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products/${id}`)
+            const response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products?id=${id}`)
             const responseProduct = await response.json()
-            console.log(responseProduct)
             setProduct(responseProduct)
-
         }
         getProductDetail()
     }, [id])

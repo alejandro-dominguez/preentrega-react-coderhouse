@@ -1,6 +1,7 @@
 export { default as NavBar } from './navbar/NavBar';
 export { default as CartWidget } from './cartWidget/CartWidget';
 export { default as Footer } from './footer/Footer';
+export { default as Landing } from './landing/Landing';
 export { default as Root } from './root/Root';
 export { default as Item } from './itemComponents/item/Item';
 export { default as ItemList } from './itemComponents/itemList/ItemList';
