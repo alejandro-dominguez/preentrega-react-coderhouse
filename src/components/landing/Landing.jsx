@@ -1,18 +1,21 @@
 import { ItemListContainer } from './../../containers/';
 import rocketImg from '../../assets/rocket.svg';
+import heroLogo from '../../assets/logo-footer.svg';
 
 const Landing = () => {
     return (
         <>
         <div className='pt-[60.797px] relative mb-[40rem]'>
             <div className="flex">
-                <h1 className='pl-12 pt-8 text-6xl leading-snug absolute mr-72'>
-                    Consigue los mejores equipamientos geek del mercado
+                <h1 className='heroH1 z-10 px-12 pt-8 text-6xl text-slate-800 leading-snug absolute w-[50rem]'>
+                    ¡Consigue los mejores equipamientos geek del mercado!
                 </h1>
-                <h2 className='pl-12 pt-80 text-3xl leading-snug absolute mr-[51rem]'>
-                    Porque la vida es demasiado corta para jugar mal.
+                <h2 className='z-10 px-12 pt-80 text-3xl leading-snug absolute w-[38rem]'>
+                    Porque la vida es demasiado corta para estar jugando mal.
                 </h2>
-                <img src={rocketImg} alt="icono de cohete" className='w-20 absolute rotate-45 ml-[35rem] pt-[30rem]' />
+                <img src={heroLogo} alt="Geekommerce logo" className='z-10 w-56 absolute ml-12 pt-[30rem]' />
+                <img src={rocketImg} alt="icono de cohete" className='z-10 w-20 absolute rotate-45 ml-[40rem]
+                pt-[31.5rem]'/>
                 <div class="heroImg">
                     <svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
                     clip-rule="evenodd" stroke-linejoin="round">

@@ -47,10 +47,14 @@ nav ul li{
 
 @layer components{
 
+	.heroH1 {
+		text-shadow: 0.125rem 0.125rem 0 #ff7f3a;
+	}
+
 	.heroImg svg {
 			width: 45rem;
 			position: absolute;
-			right: -200px;
+			right: -150px;
 			transform: rotate(-45deg);
 	}
 }
