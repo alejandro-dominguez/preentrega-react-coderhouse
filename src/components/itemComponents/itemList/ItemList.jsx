@@ -1,10 +1,13 @@
 import { Item } from '../../';
 
-//Se encarga de hacer el map con los productos
 const ItemList = ({products}) => {
 	return (
 		products.map(product => {
-			return <Item key={product.id} product={product}/>
+			return(
+				<div className="pt-[60.797px]">
+					<Item key={product.id} product={product} />
+				</div>
+			)
 		})
 	)
 }

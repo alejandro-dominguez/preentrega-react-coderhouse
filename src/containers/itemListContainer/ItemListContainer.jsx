@@ -24,8 +24,8 @@ export default function ItemListContainer () {
     }, [categoryId])
     
     return (
-        <>
+        <div>
             <ItemList products={products}/>
-        </>
+        </div>
     )
 }

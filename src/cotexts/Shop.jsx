@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const Shop = createContext({});
 
-const ShopProvider = ({ children }) => {
+const ShopProvider = ({children}) => {
     const [products, setProducts] = useState([])
 
     const addProduct = (productToAdd) => {
