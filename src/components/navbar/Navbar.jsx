@@ -29,11 +29,31 @@ const NavBar = () => {
                 </li>
                 <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
                 cursor-pointer">
+                    <Link to="/category/mouse-pads">Mouse pads</Link>
+                </li>
+                <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
+                cursor-pointer">
                     <Link to="/category/monitores">Monitores</Link>
                 </li>
                 <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
                 cursor-pointer">
                     <Link to="/category/joysticks">Joysticks</Link>
+                </li>
+                <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
+                cursor-pointer">
+                    <Link to="/category/sillas">Sillas</Link>
+                </li>
+                <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
+                cursor-pointer">
+                    <Link to="/category/teléfonos">Teléfonos</Link>
+                </li>
+                <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
+                cursor-pointer">
+                    <Link to="/category/notebooks">Notebooks</Link>
+                </li>
+                <li className="flex items-center hover:text-slate-900 hover:bg-slate-200 h-full px-4
+                cursor-pointer">
+                    <Link to="/category/lentes">Lentes</Link>
                 </li>
                 <li>
                     <CartWidget />

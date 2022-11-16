@@ -4,13 +4,15 @@ import { ItemDetail } from "../../components/";
 
 const ItemDetailContainer = () => {
     const {id} = useParams()
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState({})
+
+    console.log(product)
 
     useEffect(() => {
         const getProductDetail = async () => {
             const response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products?id=${id}`)
             const responseProduct = await response.json()
-            setProduct(responseProduct)
+            setProduct(responseProduct[0])
         }
         getProductDetail()
     }, [id])

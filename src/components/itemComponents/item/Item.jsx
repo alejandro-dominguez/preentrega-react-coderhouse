@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-//Card
 const Item = ({product}) => {
 	const navigate = useNavigate()
 

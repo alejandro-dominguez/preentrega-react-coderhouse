@@ -7,3 +7,4 @@ export { default as Item } from './itemComponents/item/Item';
 export { default as ItemList } from './itemComponents/itemList/ItemList';
 export { default as ItemDetail } from './itemComponents/itemDetail/ItemDetail';
 export { default as ItemCount } from './itemComponents/itemCount/ItemCount';
+export { default as HomeCarousel } from './homeCarousel/HomeCarousel';
