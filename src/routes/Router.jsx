@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Root } from "../components/";
+import Root from "../routes/root/Root";
 import { Landing } from "../components/";
-import { ItemDetailContainer, ItemListContainer } from "../containers/";
+import { ItemDetailContainer, ItemListContainer, CartContainer } from "../containers/";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +19,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/detail/:id",
-                element: <ItemDetailContainer/>,
+                element: <ItemDetailContainer />,
+            },
+            {
+                path: "/cart",
+                element: <CartContainer />,
             },
         ],
     },

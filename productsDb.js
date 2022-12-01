@@ -76,7 +76,7 @@
     {
       "id": "9",
       "name": "HyperX SoloCast",
-      "category": "micrófonos",
+      "category": "microfonos",
       "description": "Con el micrófono HyperX descubrirás una nueva forma de captar y emitir audios. Fiel reflejo de la realidad. Ideal para varias actividades. Te brindará un sonido de calidad y conseguirás la nitidez de las voces. Un formato a tu medida: Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales. Diseño eficaz: Su patrón polar cardioide ofrece una mayor sensibilidad hacia los sonidos frontales, y así evita los ruidos provenientes de la parte posterior.",
       "price": 13900,
       "img": "https://i.ibb.co/cDCsc8k/microfonos1.png",
@@ -85,7 +85,7 @@
     {
       "id": "10",
       "name": "Gadnic Mcc11",
-      "category": "micrófonos",
+      "category": "microfonos",
       "description": "Micrófono de PC Premium: el micrófono de PC se puede usar para estudio de transmisión de radio, voz en off, podcast, grabación, juegos, chat en MSN, Skype, conferencia. Admite dispositivos de PC, computadora portátil, iPhone, iPad, teléfono inteligente. Micrófono de grabación de alta calidad: el micrófono de respuesta de frecuencia 50Hz-16kHz le proporciona una voz clara y de alta fidelidad, sin ruido que lo moleste, lo que le permite sentirse libre para cantar, jugar, hablar, etc. Note: Pero no coloque el micrófono demasiado cerca La pared y la fuente de energía.",
       "price": 3049,
       "img": "https://i.ibb.co/qBcJx7k/microfonos2.png",

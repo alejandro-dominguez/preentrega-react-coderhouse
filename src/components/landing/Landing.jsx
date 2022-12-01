@@ -1,9 +1,9 @@
-import { ItemListContainer } from './../../containers/';
 import rocketImg from '../../assets/rocket.svg';
 import heroLogo from '../../assets/logo-footer.svg';
 import { HomeCarousel } from '../';
 
 const Landing = () => {
+    
     const carouselSlides = [
         {url: "https://i.ibb.co/X3n8nBX/ella-don-4-X-o3-q-Fg-Q-unsplash.png"},
         {url: "https://i.ibb.co/QK50DWq/pexels-rodnae-productions-7915357.png"},
@@ -21,9 +21,9 @@ const Landing = () => {
                 <h2 className='z-10 px-12 pt-80 text-3xl leading-snug absolute w-[38rem]'>
                     Porque la vida es demasiado corta para estar jugando mal.
                 </h2>
-                <img src={heroLogo} alt="Geekommerce logo" className='z-10 w-72 absolute ml-12 mt-[30rem]' />
-                <img src={rocketImg} alt="icono de cohete" className='z-10 w-14 absolute rotate-45 ml-[33rem]
-                mt-[30rem]'/>
+                <img src={heroLogo} alt="Geekommerce logo" className='z-10 w-72 absolute ml-12 mt-[28rem] block' />
+                <img src={rocketImg} alt="icono de cohete" className='z-10 w-14 absolute rotate-45 ml-[31rem] block
+                mt-[28rem]'/>
                 <div className="heroImg">
                     <svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd"
                     clipRule="evenodd" strokeLinejoin="round">
@@ -37,7 +37,6 @@ const Landing = () => {
             </div>
         </div>
         <HomeCarousel carouselSlides={carouselSlides} />
-        <ItemListContainer/>
         </>
     )
 }

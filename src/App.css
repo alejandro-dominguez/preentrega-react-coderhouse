@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto+Condensed:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -38,14 +38,50 @@ h2 {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-nav ul li{
+nav ul li {
     -webkit-transition: color 0.2s, background-color 0.2s;
     -moz-transition: color 0.2s, background-color 0.2s;
     -o-transition: color 0.2s, background-color 0.2s;
     transition: color 0.2s, background-color 0.2s;
 }
 
-@layer components{
+@layer components {
+
+	.navBarFlexBox {
+		@apply flex justify-between items-center px-12 h-full
+	}
+
+	.dropdownMenu {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+		z-index: 10;
+		pointer-events: none;
+	}
+
+	.dropdown:hover .dropdownMenu {
+		pointer-events: auto;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.btnNav:focus + .dropdownMenu {
+		pointer-events: auto;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.dropdownArrow {
+		transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+	}
+
+	.dropdown:hover .dropdownArrow {
+		@apply rotate-0
+	}
+
+	.btnNav:focus + .dropdownArrow {
+		@apply rotate-0
+	}
 
 	.heroH1 {
 		text-shadow: 0.125rem 0.125rem 0 #ff7f3a;
@@ -54,7 +90,157 @@ nav ul li{
 	.heroImg svg {
 			width: 45rem;
 			position: absolute;
-			right: -150px;
-			transform: rotate(-45deg);
+			right: -225px;
+			top: 0;
+			transform: rotate(-60deg);
+	}
+
+	.item-list-container, .item-detail-container, .cart-container {
+		min-height: calc(100vh - 96px);
+	}
+
+	.item-detail-container {
+		@apply grid place-items-center
+	}
+
+	.cardImg {
+		filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.3));
+	}
+
+	.itemCard {
+		transition: all 150ms ease;
+		position: relative;
+	}
+
+	.cardGrid::after {
+		content: "";
+		height: 2px;
+		width: 90%;
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		border-radius: 1rem;
+		transform: translateX(-50%);
+		background-color: #cbd5e1;
+	}
+
+	.cardList::after {
+		content: "";
+		height: 90%;
+		width: 2px;
+		position: absolute;
+		top: 50%;
+		left: 39.5%;
+		border-radius: 1rem;
+		transform: translateY(-50%);
+		background-color: #cbd5e1;
+	}
+
+	.itemCard:hover > span, .itemCard:hover > div > span {
+		@apply text-[#ff7c1a]
+	}
+
+	.cardGrid:hover::after {
+		height: 3px;
+		@apply bg-[#ff7c1a]
+	}
+
+	.cardList:hover::after {
+		width: 3px;
+		@apply bg-[#ff7c1a]
+	}
+
+	.cardItemDetail::after {
+		content: "";
+		height: 50%;
+		width: 3px;
+		position: absolute;
+		top: 44.5%;
+		left: 31.5%;
+		border-radius: 1rem;
+		transform: translateY(-50%);
+		background-color: #cbd5e1;
+	}
+
+	.cardItemDetail::before {
+		content: "";
+		height: 50%;
+		width: 3px;
+		position: absolute;
+		top: 44.5%;
+		right: 19%;
+		border-radius: 1rem;
+		transform: translateY(-50%);
+		background-color: #cbd5e1;
+
+	}
+
+	.itemDetailH1 {
+		text-shadow: 0.135rem 0.135rem 0 #0f172a;
+	}
+
+	.itemDetailtextShadow {
+		text-shadow: 0.08rem 0.08rem 0 #0f172a;
+	}
+
+	@media only screen and (min-width: 2100px) {
+		.xlContainer {
+			@apply px-96
+		}
+
+		.navBarFlexBox {
+			@apply px-96
+		}
+	}
+	
+	@media only screen and (min-width: 1800px) and (max-width: 2100px) {
+		
+		.xlContainer {
+			@apply px-72
+		}
+
+		.navBarFlexBox {
+			@apply px-72
+		}
+	}
+
+	@media only screen and (min-width: 1500px) and (max-width: 1800px) {
+		
+		.xlContainer {
+			@apply px-20
+		}
+
+		.navBarFlexBox {
+			@apply px-20
+		}
+
+		.heroImg svg {
+			right: -50px;
+		}
+	}
+
+	@media only screen and (max-width: 1180px) {
+
+		.heroImg svg {
+			top: -30px;
+			right: -375px;
+			transform: rotate(-75deg);
+		}
+	}
+
+	@media only screen and (max-width: 980px) {
+
+		.heroImg svg {
+			top: -100px;
+			right: -475px;
+			transform: rotate(-90deg);
+		}
+	}
+
+	@media only screen and (max-width: 830px) {
+
+		.heroImg svg {
+			display: none;
+		}
 	}
 }
