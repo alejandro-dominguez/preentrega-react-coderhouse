@@ -1,4 +1,4 @@
-const useNumberFormater = (number) => {
+const numberFormater = (number) => {
     return new Intl.NumberFormat(
         "ES-AR",
         {
@@ -7,4 +7,4 @@ const useNumberFormater = (number) => {
         }).format(number)
 }
 
-export default useNumberFormater;
+export default numberFormater;

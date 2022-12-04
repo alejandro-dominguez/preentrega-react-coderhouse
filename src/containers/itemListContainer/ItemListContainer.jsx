@@ -1,48 +1,36 @@
-import { useEffect, useState } from 'react';
 import { ItemList } from '../../components/';
 import { useParams } from 'react-router-dom';
-import { collection, query, where, getDocs } from "firebase/firestore";
-import { db } from "../../firebase/config";
+import { RotatingLines } from "react-loader-spinner";
+import { useGetFirebaseData } from '../../customHooks';
 
 const ItemListContainer = (Props) => {
-    const [products, setProducts] = useState([])
     const {categoryId} = useParams()
+    const [data, error, loading] = useGetFirebaseData(categoryId)
 
-    useEffect(() => {
-        (async () => {
-            try {
-                let response
-                if (categoryId) {
-                    response = await
-                    fetch(`https://636d185791576e19e31f7480.mockapi.io/products?category=${categoryId}`)
-                } else {
-                    response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products`)
-                }
-                const data = await response.json()
-                if (data) setProducts(data)
-                /* let q
-                if (categoryId) { 
-                    q = query(collection(db, "products"), where("category" === categoryId))
-                } else { q = query(collection(db, "products"))
-                }
-                const firebaseProducts = []
-                const querySnapshot = await getDocs(q)
-                
-                querySnapshot.forEach((doc) => {
-                    console.log(doc.id, " => ", doc.data())
-                    firebaseProducts.push({ ...doc.data(), id: doc.id })
-                })
-                setProducts(firebaseProducts) */
-            } catch (error) {
-                console.log(error)
-            }
-        })()
-    }, [categoryId])
-    
     return (
-        <div className='p-12 bg-slate-500 w-full item-list-container' ref={Props.refProp}>
-            <ItemList products={products}/>
+        <>
+        {(data.length && !loading && !error) ?
+        <div className='p-12 bg-slate-500 w-full itemListContainer' ref={Props.refProp}>
+            <ItemList products={data}/>
         </div>
+        : error ? 
+        <div className='p-12 bg-slate-500 w-full itemListContainer'>
+            <div className="bg-slate-200 rounded-md px-6 py-20 w-full grid place-items-center mt-10">
+                <h1 className='text-center p-4'>{error}</h1>
+            </div>
+        </div>
+        : <div className='p-12 bg-slate-500 w-full itemListContainer'>
+            <div className="bg-slate-200 rounded-md px-6 py-20 w-full grid place-items-center mt-10">
+                <RotatingLines
+                    strokeColor="#ff7c1a"
+                    strokeWidth="5"
+                    animationDuration="0.75"
+                    width="96"
+                    visible={true}
+                />
+            </div>
+        </div>}
+        </>
     )
 }
 

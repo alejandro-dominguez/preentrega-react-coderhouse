@@ -10,19 +10,14 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         const getProductDetail = async () => {
-            const response = await fetch(`https://636d185791576e19e31f7480.mockapi.io/products?id=${id}`)
-            const responseProduct = await response.json()
-            setProduct(responseProduct[0])
-        /* const docRef = doc(db, "products", id)
-        const docSnap = await getDoc(docRef)
-
-        if (docSnap.exists()) {
-            console.log("Document data:", docSnap.data())
-            setProduct({ ...docSnap.data(), id: docSnap.id })
-        } else {
-            console.log("No such document!")
-        } */
-        }
+            const docRef = doc(db, "products", id)
+            const docSnap = await getDoc(docRef)
+            if (docSnap.exists()) {
+                setProduct({ ...docSnap.data(), id: docSnap.id })
+            } else {
+                console.log("No such document!")
+            }
+            }
         getProductDetail()
     }, [id])
 

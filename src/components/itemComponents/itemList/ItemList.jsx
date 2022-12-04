@@ -21,9 +21,11 @@ const ItemList = ({products}) => {
 		<div className="flex flex-col w-4/5 pl-6">
 			<div className="flex mb-6 w-full justify-between">
 				<div className="flex gap-4">
-					<IoGrid size={22} className='text-slate-700 hover:text-[#ff7c1a] cursor-pointer'
+					<IoGrid size={22} className={grid ? 'text-[#ff7c1a] cursor-pointer'
+					: 'text-slate-700 hover:text-[#1a66ff] cursor-pointer transition-colors'}
 					onClick={() => setGrid(true)} />
-					<FaListUl size={24} className='text-slate-700 hover:text-[#ff7c1a] cursor-pointer'
+					<FaListUl size={24} className={!grid ? 'text-[#ff7c1a] cursor-pointer'
+					: 'text-slate-700 hover:text-[#1a66ff] cursor-pointer transition-colors'}
 					onClick={() => setGrid(false)} />
 				</div>
 				<div className='px-8'>

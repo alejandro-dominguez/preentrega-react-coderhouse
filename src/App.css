@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/*///// colors ///////
+
+orange: #ff7c1a
+blue: #1a66ff
+
+///////////////////*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -83,6 +90,10 @@ nav ul li {
 		@apply rotate-0
 	}
 
+	.cartIconShadow {
+		filter: drop-shadow(0.125rem 0.125rem 0.1rem rgba(255, 255, 255, 0.7));
+	}
+
 	.heroH1 {
 		text-shadow: 0.125rem 0.125rem 0 #ff7f3a;
 	}
@@ -95,12 +106,8 @@ nav ul li {
 			transform: rotate(-60deg);
 	}
 
-	.item-list-container, .item-detail-container, .cart-container {
+	.itemListContainer, .itemDetailContainer, .cartItemContainer, .CartModalFormContainer {
 		min-height: calc(100vh - 96px);
-	}
-
-	.item-detail-container {
-		@apply grid place-items-center
 	}
 
 	.cardImg {
@@ -112,75 +119,46 @@ nav ul li {
 		position: relative;
 	}
 
-	.cardGrid::after {
-		content: "";
-		height: 2px;
-		width: 90%;
-		position: absolute;
-		top: 65%;
-		left: 50%;
-		border-radius: 1rem;
-		transform: translateX(-50%);
-		background-color: #cbd5e1;
+	.gridCardLine {
+		@apply w-full h-[2px] bg-[#cbd5e1] mb-2 rounded-full
 	}
 
-	.cardList::after {
-		content: "";
-		height: 90%;
-		width: 2px;
-		position: absolute;
-		top: 50%;
-		left: 39.5%;
-		border-radius: 1rem;
-		transform: translateY(-50%);
-		background-color: #cbd5e1;
+	.listCardLine {
+		@apply h-[160px] w-[2px] bg-[#cbd5e1] rounded-full mr-1
+	}
+	
+	.itemCard:hover > .gridCardLine {
+		@apply bg-[#ff7c1a] h-[2.5px]
+	}
+
+	.itemCard:hover > .listCardLine {
+		@apply bg-[#ff7c1a] w-[2.5px]
 	}
 
 	.itemCard:hover > span, .itemCard:hover > div > span {
-		@apply text-[#ff7c1a]
-	}
-
-	.cardGrid:hover::after {
-		height: 3px;
-		@apply bg-[#ff7c1a]
-	}
-
-	.cardList:hover::after {
-		width: 3px;
-		@apply bg-[#ff7c1a]
-	}
-
-	.cardItemDetail::after {
-		content: "";
-		height: 50%;
-		width: 3px;
-		position: absolute;
-		top: 44.5%;
-		left: 31.5%;
-		border-radius: 1rem;
-		transform: translateY(-50%);
-		background-color: #cbd5e1;
-	}
-
-	.cardItemDetail::before {
-		content: "";
-		height: 50%;
-		width: 3px;
-		position: absolute;
-		top: 44.5%;
-		right: 19%;
-		border-radius: 1rem;
-		transform: translateY(-50%);
-		background-color: #cbd5e1;
-
+		@apply text-[#1a66ff]
 	}
 
 	.itemDetailH1 {
-		text-shadow: 0.135rem 0.135rem 0 #0f172a;
+		text-shadow: 0.135rem 0.135rem 0.05rem #0f172af7;
 	}
 
 	.itemDetailtextShadow {
-		text-shadow: 0.08rem 0.08rem 0 #0f172a;
+		text-shadow: 0.08rem 0.08rem 0.08rem #0f172aab;
+	}
+
+	.cartH1 {
+		text-shadow: 0.075rem 0.075rem 0.05rem #ff7f3a;
+	}
+
+	.formContainer {
+		animation: fadeInLeft 250ms linear forwards;
+		@apply relative bg-slate-200 rounded-md py-6 px-10 mt-10 grid place-items-center
+	}
+
+	.formContainer.active {
+		animation: fadeOutLeft 250ms linear forwards;
+		@apply relative bg-slate-800
 	}
 
 	@media only screen and (min-width: 2100px) {
@@ -228,6 +206,15 @@ nav ul li {
 		}
 	}
 
+	@media only screen and (max-width: 1050px) {
+
+/* 		.heroImg svg {
+			top: -100px;
+			right: -475px;
+			transform: rotate(-90deg);
+		} */
+	}
+	
 	@media only screen and (max-width: 980px) {
 
 		.heroImg svg {
@@ -241,6 +228,36 @@ nav ul li {
 
 		.heroImg svg {
 			display: none;
+		}
+	}
+
+	@keyframes fadeInLeft {
+		0% {
+			opacity: 0;
+			left: -50px;
+		}
+		50% {
+			opacity: 0.5;
+			left: -25px;
+		}
+		100% {
+			opacity: 1;
+			left: 0;
+		}
+	}
+
+	@keyframes fadeOutLeft {
+		0% {
+			opacity: 1;
+			left: 0px;
+		}
+		50% {
+			opacity: 0.5;
+			left: -25px;
+		}
+		100% {
+			opacity: 0;
+			left: -50px;
 		}
 	}
 }

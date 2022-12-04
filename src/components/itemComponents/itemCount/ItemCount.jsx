@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { IoMdAddCircle, IoMdRemoveCircle } from "react-icons/io";
 
-const ItemCount = ({onAdd, stock, initial}) => {
+const ItemCount = ({onAdd, quantity, initial}) => {
     const [count, setCount] = useState(initial)
     const navigate = useNavigate()
 
@@ -11,7 +12,7 @@ const ItemCount = ({onAdd, stock, initial}) => {
     }
 
     const onPlus = () => {
-        if (count < stock) setCount(count + 1)
+        if (count < quantity) setCount(count + 1)
     }
 
     const onDecrement = () => {
@@ -20,20 +21,22 @@ const ItemCount = ({onAdd, stock, initial}) => {
 
     return(
         <div className="grid place-items-center gap-4">
-            <span className="font-bold" >stock: {stock}</span>
-            <div className="flex items-center justify-center">
-                <button className="text-3xl mr-4 font-bold text-[#ff7c1a] itemDetailtextShadow
-                hover:text-[#1a66ff] transition-colors" onClick={onDecrement}>
-                    -
+            <div className="flex items-center justify-center gap-4">
+                <button className="text-[#ff7c1a] hover:text-[#1a66ff] transition-colors"
+                onClick={() => onDecrement()}>
+                    <IoMdRemoveCircle className="text-[1.25rem] drop-shadow-sm"/>
                 </button>
-                <span className="text-xl text-[#ff7c1a] itemDetailtextShadow min-w-[25px]">{count}</span>
-                <button className="text-2xl ml-3 font-bold text-[#ff7c1a] itemDetailtextShadow
-                hover:text-[#1a66ff] transition-colors" onClick={onPlus}>
-                    +
+                <span className="text-xl font-OpenSans font-semibold text-[#ff7c1a]
+                itemDetailtextShadow min-w-[25px] mb-[0.15rem]">
+                    {count}
+                </span>
+                <button className="text-[#ff7c1a] hover:text-[#1a66ff] transition-colors"
+                onClick={() => onPlus()}>
+                    <IoMdAddCircle className="text-[1.25rem] drop-shadow-sm"/>
                 </button>
             </div>
-            <button className="ml-auto py-2 px-6 shadow-md bg-[#1a66ff] rounded-full text-white font-bold
-            tracking-wider hover:scale-105 transition-transform" onClick={() => handleAdd(count)}>
+            <button className="ml-auto py-2 px-6 shadow-md bg-[#1a66ff] rounded-full text-white
+            font-bold tracking-wider hover:scale-105 transition-transform" onClick={() => handleAdd(count)}>
                 Confirmar
             </button>
         </div>

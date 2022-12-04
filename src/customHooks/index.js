@@ -1,1 +1,1 @@
-export { default as useNumberFormater } from './useNumberFormater';
+export { default as useGetFirebaseData } from './useGetFirebaseData';

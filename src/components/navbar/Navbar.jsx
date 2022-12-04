@@ -9,14 +9,16 @@ const NavBar = () => {
         <nav className="z-50 w-full fixed bg-white/80 backdrop-blur-md h-[67.5px] text-slate-700">
             <div className="navBarFlexBox">
                 <Link to="/">
-                    <img src={headerLogo} alt="Geekommerce logo" className="h-10 block" />
+                    <div className="w-[6.5rem]">
+                        <img src={headerLogo} alt="Geekommerce logo" className="w-full block" />
+                    </div>
                 </Link>
                 <ul className="flex justify-between items-center uppercase font-bold h-full text-center">
                     <li className="dropdown relative">
                         <button type="button" className="btnNav relative flex justify-between items-center px-3
                         hover:text-slate-900 hover:bg-slate-300 h-[67.5px] w-36 uppercase">
                             Informática
-                            <IoIosArrowDown className="dropdownArrow -rotate-90" />
+                            <IoIosArrowDown className="dropdownArrow -rotate-90 text-[#1a66ff]" />
                         </button>
                         <div className="dropdownMenu absolute top-full shadow-md rounded-b-md bg-slate-50">
                             <Link to="/category/notebooks">
@@ -31,27 +33,15 @@ const NavBar = () => {
                                     Tablets
                                 </div>
                             </Link>
-                            <Link to="/category/celulares">
-                                <div className="grid place-items-center cursor-pointer hover:text-slate-900
-                                hover:bg-slate-200 h-14 w-36 rounded-b-md">
-                                    Celulares
-                                </div>
-                            </Link>
                         </div>
                     </li>
                     <li className="dropdown relative">
                         <button type="button" className="btnNav relative flex justify-between items-center px-3
                         hover:text-slate-900 hover:bg-slate-300 h-[67.5px] w-36 uppercase">
                             Periféricos
-                            <IoIosArrowDown className="dropdownArrow -rotate-90" />
+                            <IoIosArrowDown className="dropdownArrow -rotate-90 text-[#1a66ff]" />
                         </button>
                         <div className="dropdownMenu absolute top-full shadow-md rounded-b-md bg-slate-50">
-                            <Link to="/category/monitores">
-                                <div className="grid place-items-center cursor-pointer hover:text-slate-900
-                                hover:bg-slate-200 h-14 w-36">
-                                    Monitores
-                                </div>
-                            </Link>
                             <Link to="/category/mouses">
                                 <div className="grid place-items-center cursor-pointer hover:text-slate-900
                                 hover:bg-slate-200 h-14 w-36">
@@ -82,13 +72,13 @@ const NavBar = () => {
                         <button type="button" className="btnNav relative flex justify-between items-center px-3
                         hover:text-slate-900 hover:bg-slate-300 h-[67.5px] w-36 uppercase">
                             Accesorios
-                            <IoIosArrowDown className="dropdownArrow -rotate-90" />
+                            <IoIosArrowDown className="dropdownArrow -rotate-90 text-[#1a66ff]" />
                         </button>
                         <div className="dropdownMenu absolute top-full shadow-md rounded-b-md bg-slate-50">
-                            <Link to="/category/butacas">
+                            <Link to="/category/sillas">
                                 <div className="grid place-items-center cursor-pointer hover:text-slate-900
                                 hover:bg-slate-200 h-14 w-36">
-                                    Butacas
+                                    Sillas
                                 </div>
                             </Link>
                             <Link to="/category/mousepads">
@@ -105,7 +95,7 @@ const NavBar = () => {
                             </Link>
                         </div>
                     </li>
-                    <li>
+                    <li className="relative grid place-items-center">
                         <CartWidget />
                     </li>
                 </ul>
