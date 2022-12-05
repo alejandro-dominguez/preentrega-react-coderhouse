@@ -8,6 +8,5 @@ export { default as ItemList } from './itemComponents/itemList/ItemList';
 export { default as ItemDetail } from './itemComponents/itemDetail/ItemDetail';
 export { default as ItemCount } from './itemComponents/itemCount/ItemCount';
 export { default as HomeCarousel } from './homeCarousel/HomeCarousel';
-export { default as Pagination } from './pagination/Pagination';
 export { default as CartItem } from './cartComponents/cartItem/CartItem';
 export { default as CartModalForm } from './cartComponents/cartModalForm/CartModalForm';

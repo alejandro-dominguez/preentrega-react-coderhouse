@@ -1,12 +1,10 @@
-import { Item, Pagination } from '../../';
+import { Item } from '../../';
 import { useState } from 'react';
 import { IoGrid } from "react-icons/io5"; 
 import { FaListUl } from "react-icons/fa"; 
 
 const ItemList = ({products}) => {
 	const [grid, setGrid] = useState(true)
-	const [currentPage, setCurrentPage] = useState(1)
-	const [productsPerPage] = useState(9)
 
 	return (
 	<div className="bg-slate-200 rounded-md p-6 w-full flex justify-between mt-[4.5rem] md:mt-10 mb-4 md:mb-0">
@@ -30,12 +28,6 @@ const ItemList = ({products}) => {
 					)
 				})}
 			</div>
-			{/* <Pagination
-					currentPage={currentPage}
-					setCurrentPage={setCurrentPage}
-					productsPerPage={productsPerPage}
-					totalProducts={products.length}
-        		/> */}
 		</div>
 	</div>
 	)
