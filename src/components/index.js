@@ -1,4 +1,5 @@
-export { default as NavBar } from './navbar/NavBar';
+export { default as NavBar } from './navComponents/navbar/NavBar';
+export { default as DropdownMenu } from './navComponents/dropdownMenu/DropdownMenu';
 export { default as CartWidget } from './cartComponents/cartWidget/CartWidget';
 export { default as Footer } from './footer/Footer';
 export { default as Landing } from './landing/Landing';
@@ -6,8 +7,6 @@ export { default as Item } from './itemComponents/item/Item';
 export { default as ItemList } from './itemComponents/itemList/ItemList';
 export { default as ItemDetail } from './itemComponents/itemDetail/ItemDetail';
 export { default as ItemCount } from './itemComponents/itemCount/ItemCount';
-export { default as ItemFilter } from './itemComponents/itemFilter/ItemFilter';
-export { default as ItemSearch } from './itemComponents/itemSearch/ItemSearch';
 export { default as HomeCarousel } from './homeCarousel/HomeCarousel';
 export { default as Pagination } from './pagination/Pagination';
 export { default as CartItem } from './cartComponents/cartItem/CartItem';

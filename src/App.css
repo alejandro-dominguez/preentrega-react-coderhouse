@@ -4,13 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*///// colors ///////
-
-orange: #ff7c1a
-blue: #1a66ff
-
-///////////////////*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -54,6 +47,10 @@ nav ul li {
 
 @layer components {
 
+	.navBar {
+		@apply z-50 w-full fixed bg-white/80 backdrop-blur-md h-[67.5px] text-slate-700 
+	}
+
 	.navBarFlexBox {
 		@apply flex justify-between items-center px-12 h-full
 	}
@@ -96,6 +93,11 @@ nav ul li {
 
 	.heroH1 {
 		text-shadow: 0.125rem 0.125rem 0 #ff7f3a;
+		@apply px-12 pt-8 text-6xl text-slate-800 leading-snug absolute w-[50rem]
+	}
+
+	.heroH2 {
+		@apply px-12 pt-80 text-3xl leading-snug absolute w-[38rem]
 	}
 
 	.heroImg svg {
@@ -106,8 +108,25 @@ nav ul li {
 			transform: rotate(-60deg);
 	}
 
+	.heroLogo {
+		@apply w-72 absolute ml-12 mt-[28rem]
+	}
+
+	.heroIcon {
+		@apply w-14 absolute rotate-45 ml-[31rem] mt-[28rem]
+	}
+
 	.itemListContainer, .itemDetailContainer, .cartItemContainer, .CartModalFormContainer {
 		min-height: calc(100vh - 96px);
+	}
+
+	.girdItemListContainer {
+		@apply grid place-items-center grid-cols-4 gap-8
+	}
+
+	.listCard {
+		@apply  flex justify-start items-center p-4 gap-2 shadow-sm bg-slate-50 rounded-md cursor-pointer
+		hover:shadow-xl hover:scale-[1.0125]
 	}
 
 	.cardImg {
@@ -119,12 +138,20 @@ nav ul li {
 		position: relative;
 	}
 
+	.listCardImg {
+		@apply w-2/5
+	}
+
+	.listCardInfo {
+		@apply w-3/5
+	}
+
 	.gridCardLine {
 		@apply w-full h-[2px] bg-[#cbd5e1] mb-2 rounded-full
 	}
 
 	.listCardLine {
-		@apply h-[160px] w-[2px] bg-[#cbd5e1] rounded-full mr-1
+		@apply h-[160px] w-[2px] bg-[#cbd5e1] rounded-full mr-1 ml-3
 	}
 	
 	.itemCard:hover > .gridCardLine {
@@ -206,15 +233,13 @@ nav ul li {
 		}
 	}
 
-	@media only screen and (max-width: 1050px) {
+	@media only screen and (max-width: 1110px) {
 
-/* 		.heroImg svg {
-			top: -100px;
-			right: -475px;
-			transform: rotate(-90deg);
-		} */
+		.girdItemListContainer {
+			@apply grid-cols-3 gap-8
+		}
 	}
-	
+
 	@media only screen and (max-width: 980px) {
 
 		.heroImg svg {
@@ -224,10 +249,124 @@ nav ul li {
 		}
 	}
 
+	@media only screen and (max-width: 860px) {
+
+		.girdItemListContainer {
+			@apply grid-cols-2 gap-8
+		}
+	}
+	
 	@media only screen and (max-width: 830px) {
 
 		.heroImg svg {
 			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 770px) {
+
+		.heroH1 {
+			text-shadow: 0.1rem 0.1rem 0 #ff7f3a;
+			@apply px-4 text-5xl w-fit
+		}
+	
+		.heroH2 {
+			@apply px-4 pt-60 text-2xl w-[27rem]
+		}
+
+		.heroLogo {
+			@apply w-64
+		}
+	
+		.heroIcon {
+			@apply w-12 ml-[27rem]
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+
+		.navBarFlexBox {
+			@apply px-4
+		}
+	}
+
+
+	@media only screen and (max-width: 750px) {
+
+		.listCard {
+			@apply  flex flex-col justify-start items-start p-4 gap-2
+		}
+
+		.listCardImg {
+			@apply w-full
+		}
+
+		.listCardLine {
+			@apply h-[2px] w-[95%] mr-0 my-2
+		}
+
+		.listCardInfo {
+			@apply mb-2 w-full
+		}
+	}
+
+	@media only screen and (max-width: 650px) {
+
+		.navBar {
+			@apply h-[150px] 
+		}
+
+		.navBarFlexBox {
+			@apply flex flex-col justify-center mt-4
+		}
+
+		.heroH1 {
+			@apply pt-28
+		}
+
+		.heroH2 {
+			@apply pt-[19rem]
+		}
+	}
+	
+	@media only screen and (max-width: 568px) {
+
+		.heroH1 {
+			text-shadow: 0.09rem 0.09rem 0 #ff7f3a;
+			@apply text-4xl w-fit text-center
+		}
+	
+		.heroH2 {
+			@apply translate-x-1/2 right-1/2 text-xl text-center w-[20rem]
+		}
+
+		.heroLogo {
+			@apply ml-0 translate-x-1/2 right-1/2
+		}
+	
+		.heroIcon {
+			@apply ml-0 translate-x-1/2 right-1/2 mt-[19rem]
+		}
+	}
+
+
+	@media only screen and (max-width: 540px) {
+
+		.girdItemListContainer {
+			@apply grid-cols-1 gap-8
+		}
+	}
+
+	@media only screen and (max-width: 434px) {
+
+		.heroH1 {
+			text-shadow: 0.075rem 0.075rem 0 #ff7f3a;
+			line-height: 2rem;
+			@apply text-[1.55rem]
+		}
+	
+		.heroH2 {
+			@apply pt-40 w-[18rem]
 		}
 	}
 

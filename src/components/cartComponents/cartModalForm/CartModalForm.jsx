@@ -1,4 +1,4 @@
-import { useContext, useState} from 'react';
+import { useContext, useState } from 'react';
 import { ShopContext } from '../../../cotexts/ShopContext';
 import { doc, getDoc, updateDoc, collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../firebase/config';
@@ -101,11 +101,11 @@ const CartModalForm = ({modalState, setModalState}) => {
                 transition-transform' onClick={() => handleClose()}>
                         <IoMdCloseCircle />
                 </button>
-                <form onSubmit={handleSubmit} className="grid place-items-start gap-4 py-3">
-                    <div className='grid grid-cols-2 gap-4'>
+                <form onSubmit={handleSubmit} className="grid place-items-start gap-4 py-3 px-3">
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div className='flex flex-col items-start justify-center gap-3'>
                             <label htmlFor="formName" className='font-semibold'>
-                                Nombre Completo
+                                Nombre Completo:
                             </label>
                             <input required placeholder="Tu nombre" name="formName" type="text"
                             className='bg-white/90 rounded-md p-2 shadow-sm'
@@ -113,7 +113,7 @@ const CartModalForm = ({modalState, setModalState}) => {
                         </div>
                         <div className='flex flex-col items-start justify-center gap-3'>
                             <label htmlFor="formEmail" className='font-semibold'>
-                                Email
+                                Email:
                             </label>
                             <input required placeholder="Tu email" name="formEmail" type="email"
                             className='bg-white/90 rounded-md p-2 shadow-sm'
@@ -122,7 +122,7 @@ const CartModalForm = ({modalState, setModalState}) => {
                     </div>
                     <div className='flex flex-col items-start justify-center gap-3'>
                         <label htmlFor="formPhone" className='font-semibold'>
-                            Teléfono
+                            Teléfono:
                         </label>
                         <input required placeholder="Tu teléfono" name="formPhone" type="tel"
                         className='bg-white/90 rounded-md p-2 shadow-sm'
@@ -130,7 +130,7 @@ const CartModalForm = ({modalState, setModalState}) => {
                     </div>
                     <button type="submit" className='justify-self-center px-6 py-3 bg-[#1a66ff] rounded-full
                     mt-8 text-white font-bold tracking-wide shadow-sm'>
-                        Realizar la orden
+                        Realizar orden
                     </button>
                 </form>
             </div>

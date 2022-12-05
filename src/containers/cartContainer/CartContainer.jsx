@@ -16,8 +16,9 @@ const CartContainer = () => {
                 {products.map(product => {
                     return <CartItem key={product.id} item={product} />
                 })}
-                <button type='button' className='bg-[#1a66ff] px-10 py-4 rounded-full text-white text-lg
-                tracking-wide font-bold shadow-sm hover:bg-[#ff7c1a] hover:shadow-md transition-all'
+                <button type='button' className='bg-[#1a66ff] md:px-10 rounded-full text-white text-base
+                md:text-lg md:tracking-wide font-bold shadow-sm hover:bg-[#ff7c1a] hover:shadow-md px-8 py-4
+                tracking-wider transition-all'
                 onClick={() => setShowModal(true)}>
                     Formulario de compra
                 </button>

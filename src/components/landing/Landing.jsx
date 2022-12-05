@@ -14,16 +14,16 @@ const Landing = () => {
         <>
         <div className='pt-[60.797px] relative mb-[40rem]'>
             <div className="flex">
-                <h1 className='heroH1 z-10 px-12 pt-8 text-6xl text-slate-800 leading-snug absolute w-[50rem]'>
+                <h1 className='heroH1'>
                     ¡Consigue los mejores equipamientos geek del mercado!
                 </h1>
-                <h2 className='z-10 px-12 pt-80 text-3xl leading-snug absolute w-[38rem]'>
+                <h2 className='heroH2'>
                     Porque la vida es demasiado corta para estar jugando mal.
                 </h2>
-                <div className='z-10 w-72 absolute ml-12 mt-[28rem]'>
+                <div className='heroLogo'>
                     <img src={heroLogo} alt="Geekommerce logo" className='w-full block' />
                 </div>
-                <div className='z-10 w-14 absolute rotate-45 ml-[31rem] mt-[28rem]'>
+                <div className='heroIcon'>
                     <img src={rocketImg} alt="icono de cohete" className='w-full block'/>
                 </div>
                 <div className="heroImg">

@@ -14,7 +14,7 @@ const CartWidget = () => {
 			z-10 scale-95` : "hidden"}>
 				{calculateCartQuantity() === 0 ? null : `${calculateCartQuantity()}`}
 			</span>
-			<IoCartSharp size={35} className="ml-8 cartIconShadow text-[#ff7c1a]" />
+			<IoCartSharp size={35} className="cartIconShadow text-[#ff7c1a]" />
 		</div>
 	)
 }
