@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/preentrega-react-coderhouse/static/css/main.a237a4f1.css",
+    "main.js": "/preentrega-react-coderhouse/static/js/main.5126e2ab.js",
+    "static/media/logo-footer.svg": "/preentrega-react-coderhouse/static/media/logo-footer.73d9222aee9336ed8581b9053fef55ec.svg",
+    "static/media/rocket.svg": "/preentrega-react-coderhouse/static/media/rocket.cd2bc354f805aa85d2a938c5842d26e5.svg",
+    "static/media/logo-error.svg": "/preentrega-react-coderhouse/static/media/logo-error.6a167c967e9eb52a1d4e02f6bfd6c5b2.svg",
+    "static/media/logo-A.D.svg": "/preentrega-react-coderhouse/static/media/logo-A.D.342ee2b44959d9dc256ce73115658a90.svg",
+    "static/media/logo-header.svg": "/preentrega-react-coderhouse/static/media/logo-header.69a15269a8b0b101d6ddcebe9c701423.svg",
+    "index.html": "/preentrega-react-coderhouse/index.html",
+    "main.a237a4f1.css.map": "/preentrega-react-coderhouse/static/css/main.a237a4f1.css.map",
+    "main.5126e2ab.js.map": "/preentrega-react-coderhouse/static/js/main.5126e2ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a237a4f1.css",
+    "static/js/main.5126e2ab.js"
+  ]
+}
